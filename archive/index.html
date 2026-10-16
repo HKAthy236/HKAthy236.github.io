@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKAthyの小屋</title>
+  <meta name="description" content="一个二次元风格的技术博客：写代码、写工具，也写踩过的坑。">
+  <meta name="author" content="HKAthy">
+  <meta name="theme-color" content="#fff1f6">
+  <meta property="og:title" content="HKAthyの小屋">
+  <meta property="og:description" content="コード × 星光 —— 二次元风格技术博客。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/images/avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    // 首屏前应用主题，避免深色模式闪白
+    ;(function () {
+      try {
+        var saved = localStorage.getItem('blog-theme')
+        var theme =
+          saved === 'light' || saved === 'dark'
+            ? saved
+            : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+        document.documentElement.dataset.theme = theme
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    })()
+  </script>
+  <script type="module" crossorigin="" src="/assets/index-BNpXh7CC.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/index-BK9lYljE.css">
+<link rel="manifest" href="/manifest.webmanifest"></head>
+<body>
+  <div id="app"><header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <img class="brand-avatar" src="/images/avatar.webp" alt="">
+        <span class="brand-name">HKAthyの小屋</span>
+        <span class="brand-sub">コード × 星光</span>
+      </a>
+      <nav class="main-nav" id="main-nav"><a href="/" class="">文章</a><a href="/tags" class="">标签</a><a href="/archive" class="active">归档</a><a href="/about" class="">关于</a><a href="/write" class="nav-write ">写作台</a><button class="btn btn-sm btn-ghost" title="导出 RSS 订阅源">RSS</button><button class="btn btn-sm btn-ghost theme-btn" type="button" title="切换到深色模式" aria-label="切换到深色模式">🌙</button></nav>
+    </div></header><main class="site-main" id="view"><div class="page-head"><h1>归档</h1><p>按时间浏览全部文章</p></div><div class="archive-summary"><span>共 1 篇</span><span class="dot">·</span><span>1 个年份</span><span class="dot">·</span><span>约 2.2 千字</span></div><section class="archive-year"><div class="archive-year-head"><h2>2026</h2><span class="archive-year-count">1 篇</span></div><div class="archive-month"><div class="archive-month-head">10 月</div><div class="archive-list"><a class="archive-item" href="/post/algo-templates"><span class="archive-date">10-13</span><span class="archive-title">算法竞赛模板库：C++ 与 Python 双语言对照</span><span class="archive-tags"><span class="archive-tag">算法竞赛</span><span class="archive-tag">模板库</span></span></a></div></div></section></main><footer class="site-footer"><div class="footer-inner">
+      <div>© 2026 HKAthyの小屋 · HKAthy · CC BY-NC-SA 4.0</div>
+      <div class="footer-sub">用 ❤ 和 🌸 手搓的静态博客 · hello@example.com</div>
+    </div></footer></div>
+
+
+<canvas id="sakura-canvas" aria-hidden="true" width="764" height="429" style="width: 764px; height: 429px;"></canvas>
+<canvas id="sakura-canvas" aria-hidden="true" width="764" height="429" style="width: 764px; height: 429px;"></canvas></body></html>

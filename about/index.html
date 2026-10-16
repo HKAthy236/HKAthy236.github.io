@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 · HKAthyの小屋</title>
+  <meta name="description" content="一个二次元风格的技术博客：写代码、写工具，也写踩过的坑。">
+  <meta name="author" content="HKAthy">
+  <meta name="theme-color" content="#fff1f6">
+  <meta property="og:title" content="HKAthyの小屋">
+  <meta property="og:description" content="コード × 星光 —— 二次元风格技术博客。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/images/avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet">
+  <script>
+    // 首屏前应用主题，避免深色模式闪白
+    ;(function () {
+      try {
+        var saved = localStorage.getItem('blog-theme')
+        var theme =
+          saved === 'light' || saved === 'dark'
+            ? saved
+            : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+        document.documentElement.dataset.theme = theme
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    })()
+  </script>
+  <script type="module" crossorigin="" src="/assets/index-BNpXh7CC.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/index-BK9lYljE.css">
+<link rel="manifest" href="/manifest.webmanifest"></head>
+<body>
+  <div id="app"><header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <img class="brand-avatar" src="/images/avatar.webp" alt="">
+        <span class="brand-name">HKAthyの小屋</span>
+        <span class="brand-sub">コード × 星光</span>
+      </a>
+      <nav class="main-nav" id="main-nav"><a href="/" class="">文章</a><a href="/tags" class="">标签</a><a href="/archive" class="">归档</a><a href="/about" class="active">关于</a><a href="/write" class="nav-write ">写作台</a><button class="btn btn-sm btn-ghost" title="导出 RSS 订阅源">RSS</button><button class="btn btn-sm btn-ghost theme-btn" type="button" title="切换到深色模式" aria-label="切换到深色模式">🌙</button></nav>
+    </div></header><main class="site-main" id="view"><div class="page-head"><h1>关于</h1><p>关于 HKAthyの小屋 与这个博客</p></div><div class="card about-profile"><img class="about-avatar" src="/images/avatar.webp" alt="HKAthy"><div class="about-profile-text"><div class="about-profile-name">HKAthy</div><div class="about-profile-tagline">コード × 星光</div><div class="about-profile-desc">一个二次元风格的技术博客：写代码、写工具，也写踩过的坑。</div></div></div><div class="about-stats"><div class="about-stat"><div class="about-stat-num">1</div><div class="about-stat-label">篇文章</div></div><div class="about-stat"><div class="about-stat-num">5</div><div class="about-stat-label">个标签</div></div><div class="about-stat"><div class="about-stat-num">2.2k</div><div class="about-stat-label">总字数</div></div><div class="about-stat"><div class="about-stat-num">2026</div><div class="about-stat-label">始于</div></div></div><div class="card about-card"><div class="prose"><h2>你好 👋</h2>
+<p>这里是 <strong>HKAthyの小屋</strong>，一个记录技术与思考的地方。</p>
+<p>写代码这些年，踩过的坑、想明白的道理、顺手攒下的小工具，都放在了这里。比起"教程"，我更愿意写<strong>真实的排查过程</strong>——包括走过的弯路。</p>
+<h2>关于内容</h2>
+<ul>
+<li>主要写<strong>前端工程</strong>：构建工具、性能优化、类型系统</li>
+<li>也会写一些<strong>通用工程实践</strong>：Git 工作流、CLI 工具、调试技巧</li>
+<li>力求每篇都有<strong>可运行的代码</strong>，而不是泛泛而谈</li>
+</ul>
+<h2>关于本站</h2>
+<p>这个博客是一个<strong>纯静态站点</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容格式</td>
+<td>Markdown 文件，放在 <code>src/content/posts/</code></td>
+</tr>
+<tr>
+<td>构建方式</td>
+<td>Vite 在构建时把文章打包进产物</td>
+</tr>
+<tr>
+<td>部署形态</td>
+<td>纯静态文件，可托管在任意静态服务器</td>
+</tr>
+<tr>
+<td>运行依赖</td>
+<td>无后端、无数据库，打开即用</td>
+</tr>
+</tbody></table>
+<p>写一篇文章的流程就是：新建一个 <code>.md</code> 文件，写好 frontmatter，然后构建部署。</p>
+<pre><code class="language-md hljs language-markdown" data-highlighted="yes">---
+title: 文章标题
+date: 2026-10-13
+tags: [标签一, 标签二]
+<span class="hljs-section">summary: 一句话摘要
+---</span>
+
+正文从这里开始……
+</code></pre>
+<h2>联系我</h2>
+<ul>
+<li>邮箱：<code>hello@example.com</code></li>
+<li>如果哪篇文章帮你省了时间，欢迎告诉我</li>
+</ul>
+<blockquote>
+<p>写作是最好的思考方式。把一件事讲清楚，才算真的懂了。</p>
+</blockquote>
+</div></div><div class="card about-card"><h2>站点信息</h2><ul class="about-list"><li><span class="k">作者</span><span>HKAthy</span></li><li><span class="k">邮箱</span><span>hello@example.com</span></li><li><span class="k">关键词</span><span>前端工程 / 构建工具 / TypeScript / 性能优化 / Node.js</span></li><li><span class="k">版权</span><span>CC BY-NC-SA 4.0</span></li><li><span class="k">构建</span><span>Vite · 纯静态</span></li></ul></div></main><footer class="site-footer"><div class="footer-inner">
+      <div>© 2026 HKAthyの小屋 · HKAthy · CC BY-NC-SA 4.0</div>
+      <div class="footer-sub">用 ❤ 和 🌸 手搓的静态博客 · hello@example.com</div>
+    </div></footer></div>
+
+
+<canvas id="sakura-canvas" aria-hidden="true" width="764" height="429" style="width: 764px; height: 429px;"></canvas>
+<canvas id="sakura-canvas" aria-hidden="true" width="764" height="429" style="width: 764px; height: 429px;"></canvas></body></html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HKAthyの小屋</title>
+    <link>https://hkathy236.github.io/</link>
+    <description>一个二次元风格的技术博客</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 16 Oct 2026 09:35:23 GMT</lastBuildDate>
+    <atom:link href="https://hkathy236.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法竞赛模板库：C++ 与 Python 双语言对照</title>
+      <link>https://hkathy236.github.io/post/algo-templates</link>
+      <guid isPermaLink="true">https://hkathy236.github.io/post/algo-templates</guid>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <category>算法竞赛</category>
+      <category>模板库</category>
+      <category>数据结构</category>
+      <category>图论</category>
+      <category>动态规划</category>
+      <description><![CDATA[把平时反复默写的算法模板整理成了一个站：双语言实现，可搜索、可一键复制。]]></description>
+    </item>
+  </channel>
+</rss>

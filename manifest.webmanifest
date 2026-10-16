@@ -1,0 +1,19 @@
+{
+  "name": "HKAthyの小屋",
+  "short_name": "HKAthy",
+  "description": "一个二次元风格的技术博客：写代码、写工具，也写踩过的坑。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#fff1f6",
+  "background_color": "#fff8fb",
+  "icons": [
+    {
+      "src": "/images/avatar.webp",
+      "type": "image/webp",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
